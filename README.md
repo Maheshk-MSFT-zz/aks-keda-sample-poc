@@ -5,10 +5,15 @@ Based on https://github.com/kedacore/sample-hello-world-azure-functions learning
 How to build and watch (useful commands) 
 ==============================================
 $docker build . -t <your-docker-id>/hello-keda:1.0
+ 
 $docker push <your-docker-id>/hello-keda:1.0
+ 
 $func kubernetes deploy --name hello-keda --image-name <your-docker-id>/hello-keda:1
+ 
 $kubectl get pod -w
+
 $kubectl get deploy -w
+
 $kubectl get hpa -w
 
 MUST
