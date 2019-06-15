@@ -16,9 +16,10 @@ $kubectl get deploy -w
 
 $kubectl get hpa -w
 
-MUST
+TIPS
 ====
  .dockerignore omits copying "local.settings.json(sensitive details) file into Docker image 
+ 
  .gitignore excludes copying file into Github (Idea is to drop local.settings.json leaving our box) 
  
  KEDA project
